@@ -62,6 +62,11 @@
 							</a>
 						</li>
 						<li>
+							<a href="build_school.html">
+								<span class="title">学校管理</span>
+							</a>
+						</li>
+						<li>
 							<a href="build_class.html">
 								<span class="title">班级管理</span>
 							</a>
@@ -179,37 +184,40 @@
 							<tr>
 								<th style="width: auto; text-align: center">角色名称</th>
 								<th style="width: auto; text-align: center">角色权限</th>
-								<th style="width: auto; text-align: center">绑定账号</th>
+<!--								<th style="width: auto; text-align: center">绑定账号</th>-->
 								<th style="width: 16%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
 								<td style="text-align: center;">区教育局长</td>
-								<td style="text-align: center">组织架构、班级管理、系统管理、用户管理、角色管理</td>
-								<td style="text-align: center">李局长、张局长</td>
+								<td style="text-align: center">区域答题进度统计、学校测评进度、教育局预警统计	</td>
+<!--								<td style="text-align: center">李局长</td>-->
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑权限</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
+<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
 								</td>
 							</tr>
 							<tr>
 								<td style="text-align: center;">副局长</td>
-								<td style="text-align: center">组织架构、班级管理、系统管理</td>
-								<td style="text-align: center">李副局长、张副局长、张三、李四、王五、东君、史蒂夫</td>
+								<td style="text-align: center">区域答题进度统计、学校测评进度、教育局预警统计	</td>
+<!--								<td style="text-align: center">李副局长、张副局长</td>-->
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑权限</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
+<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
 
 								</td>
 							</tr>
 							<tr>
-								<td style="text-align: center;">分管领导</td>
-								<td style="text-align: center">组织架构</td>
-								<td style="text-align: center">张三、李四、王五、东君、史蒂夫、梵蒂冈	</td>
+								<td style="text-align: center;">德育科长</td>
+								<td style="text-align: center">区域答题进度统计、学校测评进度	</td>
+<!--								<td style="text-align: center">张三、李四、王五</td>-->
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑权限</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
+<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
 								</td>
 							</tr>
 							</tbody>
@@ -238,65 +246,64 @@
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				<h4 class="modal-title">编辑权限</h4>
 			</div>
-
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
 							<label class="control-label"><span class="panel-title text-danger">*</span>角色名称</label>
 							<p>
-								<input type="text" class="form-control" name="name" value="区教育局长	" disabled required />
+								<input type="text" class="form-control" name="name" value="区教育局长" required />
 							</p>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6">
+					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>权限配置</label>
+							<label class="control-label"><span class="panel-title text-danger">*</span>权限配置(租户类型筛选)</label>
 							<table class="table">
 								<thead>
 								<tr>
-									<th style="width: auto;"></th>
+									<th style="width: 30%;"></th>
+									<th style="width: 30%;"></th>
 									<th style="width: auto"></th>
 								</thead>
 								<tbody class="middle-align">
 								<tr>
 									<td>
 										<i class="fa fa-chevron-down"></i>
-										&nbsp;&nbsp;&nbsp;<input type="checkbox" class="cbr cbr-info" checked><i class="fa-sitemap"></i>组织架构
+										<input type="checkbox" class="cbr cbr-info" checked />心理健康应用
 									</td>
 									<td>
 								</tr>
 								<tr>
 									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info">组织管理
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info">班级管理
-									</td>
-								</tr>
-								<tr>
 									<td>
 										<i class="fa fa-chevron-down"></i>
-										&nbsp;&nbsp;&nbsp;<input type="checkbox" class="cbr cbr-info" checked><i class="fa-user"></i>信息管理
+										<input type="checkbox" class="cbr cbr-info" checked>心理健康
 									</td>
 									<td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>学生信息
 									</td>
 								</tr>
 								<tr>
 									<td></td>
+									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>教师信息
+										<input type="checkbox" class="cbr cbr-info" checked>区域答题进度统计
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>
+										<input type="checkbox" class="cbr cbr-info" checked>学校测评进度
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>
+										<input type="checkbox" class="cbr cbr-info" checked>教育局预警统计
 									</td>
 								</tr>
 								</tbody>
@@ -305,11 +312,10 @@
 						</div>
 					</div>
 				</div>
-
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
-				<button type="button" class="btn btn-info">提交</button>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-info">提交</button>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -61,13 +61,13 @@
 							</a>
 						</li>
 						<li>
-							<a href="tenant_role.html">
-								<span class="title">租户角色</span>
+							<a href="tenant_build.html">
+								<span class="title">组织架构</span>
 							</a>
 						</li>
 						<li>
-							<a href="tenant_build.html">
-								<span class="title">组织结构</span>
+							<a href="tenant_apply_role.html">
+								<span class="title">角色权限</span>
 							</a>
 						</li>
 					</ul>
@@ -108,59 +108,6 @@
 						</li>
 					</ul>
 				</li>
-<!--				<li>-->
-<!--					<a href="#">-->
-<!--						<i class="fa-send"></i>-->
-<!--						<span class="title">评估管理</span>-->
-<!--					</a>-->
-<!--					<ul>-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<span class="title">表单管理</span>-->
-<!--							</a>-->
-<!--						</li>-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<span class="title">测评管理</span>-->
-<!--							</a>-->
-<!--						</li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="#">-->
-<!--						<i class="fa-mortar-board"></i>-->
-<!--						<span class="title">模型管理</span>-->
-<!--					</a>-->
-<!--					<ul>-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<span class="title">模型列表</span>-->
-<!--							</a>-->
-<!--						</li>-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<span class="title">模型主题</span>-->
-<!--							</a>-->
-<!--						</li>-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<span class="title">产品线</span>-->
-<!--							</a>-->
-<!--						</li>-->
-<!--					</ul>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="#">-->
-<!--						<i class="fa-folder"></i>-->
-<!--						<span class="title">内容管理</span>-->
-<!--					</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="#">-->
-<!--						<i class="fa-bars"></i>-->
-<!--						<span class="title">任务管理</span>-->
-<!--					</a>-->
-<!--				</li>-->
 			</ul>
 		</div>
 	</div>
@@ -207,26 +154,15 @@
 				<div class="panel panel-default">
 					<div class="panel-body form-horizontal">
 						<div class="form-group">
-							<div class="col-md-1 control-label">名称	</div>
+							<div class="col-md-1 control-label">名称</div>
 							<div class="col-md-3">
-								<input type="text" value="" class="form-control" placeholder="请输入租户名称" />
-							</div>
-							<div class="col-md-1 control-label">类型</div>
-							<div class="col-md-3">
-								<select class="form-control">
-									<option value="">全部</option>
-									<option value="">学校</option>
-									<option value="">集团校</option>
-									<option value="">教育管理机构</option>
-									<option value="">非教育系统</option>
-								</select>
+								<input type="text" value="" class="form-control" placeholder="请输入名称" />
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="col-sm-12">
 								<input type="button" value="查询" style=" margin-left: 10px;" class="btn btn-info btn-single pull-right" >
 								<input type="button" value="重置" class="btn btn-info btn-single pull-right" >
-								<input type="button" value="导出" class="btn btn-info btn-single pull-left" >
 							</div>
 						</div>
 					</div>
@@ -235,32 +171,42 @@
 			<div class="col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">租户列表【共12个租户】</h3>
+						<h3 class="panel-title">租户列表</h3>
 						<div class="panel-options">
-							<input onclick="jQuery('#modal-2').modal('show', {backdrop: 'static'});" type="button" value="添加" class="btn btn-info btn-single pull-left" >
+							<input type="button" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" value="添加" class="btn btn-info btn-single pull-left" >
 						</div>
 					</div>
 					<div class="panel-body">
 						<table class="table table-small-font table-striped table-bordered">
 							<thead>
 							<tr>
-								<th style="width: 30%; text-align: center">租户信息</th>
-								<th style="width: 12%; text-align: center">租户类型</th>
-								<th style="width: 5%; text-align: center">功能</th>
-								<th style="width: 7%; text-align: center">操作</th>
+								<th style="width: auto; text-align: center">租户名称</th>
+								<th style="width: auto; text-align: center">租户类型</th>
+								<th style="width: auto; text-align: center">管理员账号</th>
+								<th style="width: auto; text-align: center">所属区域</th>
+								<th style="width: auto; text-align: center">关联学校</th>
+								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td style="text-align: left;">
-									延安中学-未来人才评估
+								<td style="text-align: center;">松江区教育局</td>
+								<td style="text-align: center">教育管理机构</td>
+								<td style="text-align: center">17621844222</td>
+								<td style="text-align: center">上海 上海市 松江区</td>
+								<td style="text-align: center">小全学校</td>
+								<td style="text-align: center">
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 								</td>
-								<td style="text-align: center">未来人才模型V1</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">松江第二中学</td>
+								<td style="text-align: center">学校</td>
+								<td style="text-align: center">17621844222</td>
+								<td style="text-align: center">上海 上海市 松江区</td>
+								<td style="text-align: center">-</td>
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal2').modal('show', {backdrop: 'static'});">管理</a></td>
-								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal1').modal('show', {backdrop: 'static'});">编辑</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 								</td>
 							</tr>
 							</tbody>

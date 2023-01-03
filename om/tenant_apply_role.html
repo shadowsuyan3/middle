@@ -67,7 +67,7 @@
 						</li>
 						<li class="active">
 							<a href="tenant_apply_role.html">
-								<span class="title">权限配置</span>
+								<span class="title">角色权限</span>
 							</a>
 						</li>
 					</ul>
@@ -171,7 +171,7 @@
 			<div class="col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">权限配置【区县(市)教育局】</h3>
+						<h3 class="panel-title">角色权限【区县(市)教育局】</h3>
 						<div class="panel-options">
 							<input type="button" value="添加" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single pull-left" >
 						</div>
@@ -181,29 +181,25 @@
 							<thead>
 							<tr>
 
-								<th style="width: auto; text-align: center">应用名称</th>
-								<th style="width: auto; text-align: center">配置角色</th>
+								<th style="width: auto; text-align: center">角色</th>
+								<th style="width: auto; text-align: center">对应权限</th>
+								<th style="width: 12%; text-align: center">备注</th>
 								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td style="text-align: center;">基础应用-教育局</td>
-								<td style="text-align: center;">区教育局长、副局长、德育科长</td>
+								<td style="text-align: center;">区教育局长、副局长</td>
+								<td style="text-align: center;">区域答题进度统计、学校测评进度、教育局预警统计</td>
+								<td style="text-align: center;">心理健康</td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 								</td>
 							</tr>
 							<tr>
-								<td style="text-align: center;">心理测评-教育局</td>
-								<td style="text-align: center;">副局长、基教科科长</td>
-								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
-								</td>
-							</tr>
-							<tr>
-								<td style="text-align: center;">学生关爱-教育局</td>
-								<td style="text-align: center;">德育科长、基教科科长、信息中心主任</td>
+								<td style="text-align: center;">德育科长、教学学院科长、教师发展主任</td>
+								<td style="text-align: center;">区域答题进度统计、学校测评进度</td>
+								<td style="text-align: center;">心理健康</td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 								</td>
@@ -227,120 +223,15 @@
 	</div>
 </div>
 <div class="modal fade" id="modal-1">
-	<div class="modal-dialog">
+	<div class="modal-dialog" style="width: 44%">
 		<div class="modal-content">
 
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">权限配置</h4>
+				<h4 class="modal-title">对应权限</h4>
 			</div>
 
 			<div class="modal-body">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>权限名称</label>
-							<p>
-								<input type="text" class="form-control" name="name" value="心理测评-教育局" required />
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>选择应用</label>
-							<p>
-								<select class="form-control">
-									<option value="">心理健康-教育局</option>
-									<option value="">学校基础应用</option>
-									<option value="">教育局基础应用</option>
-								</select>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>权限配置(租户类型:问向内部)</label>
-							<table class="table">
-								<thead>
-								<tr>
-									<th style="width: 30%;"></th>
-									<th style="width: 30%;"></th>
-									<th style="width: auto"></th>
-								</thead>
-								<tbody class="middle-align">
-								<tr>
-									<td>
-										<i class="fa fa-chevron-down"></i>
-										<input type="checkbox" class="cbr cbr-info" >租户管理
-									</td>
-									<td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >租户列表
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >开通应用
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >组织架构
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >权限配置
-									</td>
-									<td>
-									</td>
-								</tr>
-
-								<tr>
-									<td>
-										<i class="fa fa-chevron-down"></i>
-										<input type="checkbox" class="cbr cbr-info" >系统管理
-									</td>
-									<td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >菜单配置
-									</td>
-									<td>
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" >应用配置
-									</td>
-									<td>
-									</td>
-								</tr>
-								</tbody>
-							</table>
-
-						</div>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
@@ -364,7 +255,7 @@
 									<td></td>
 									<td>
 										<i class="fa fa-chevron-down"></i>
-										区教育学院	
+										区教育学院
 									</td>
 									<td>
 									</td>
@@ -373,35 +264,21 @@
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>教学学院科长
+										<input type="checkbox" class="cbr cbr-info" >教学学院科长
 									</td>
 								</tr>
 								<tr>
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>教师发展主任
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info">心理健康主任
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info">家庭教育主任
+										<input type="checkbox" class="cbr cbr-info" >教师发展主任
 									</td>
 								</tr>
 								<tr>
 									<td></td>
 									<td>
 										<i class="fa fa-chevron-down"></i>
-										内设科室	
+										内设科室
 									</td>
 									<td>
 									</td>
@@ -410,21 +287,14 @@
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>区教育局长
+										<input type="checkbox" class="cbr cbr-info" >区教育局长
 									</td>
 								</tr>
 								<tr>
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>副局长
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info">分管领导
+										<input type="checkbox" class="cbr cbr-info" >副局长
 									</td>
 								</tr>
 								<tr>
@@ -434,25 +304,60 @@
 										<input type="checkbox" class="cbr cbr-info">德育科长
 									</td>
 								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label"><span class="panel-title text-danger">*</span>角色权限</label>
+							<table class="table">
+								<thead>
+								<tr>
+									<th style="width: 30%;"></th>
+									<th style="width: 30%;"></th>
+									<th style="width: auto"></th>
+								</thead>
+								<tbody class="middle-align">
+								<tr>
+									<td>
+										<select class="form-control">
+											<option value="">心理健康-教育局</option>
+											<option value="">学生关爱-教育局</option>
+										</select>
+									</td>
+									<td>
+								</tr>
 								<tr>
 									<td></td>
-									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info">基教科科长
+										<i class="fa fa-chevron-down"></i>
+										<input type="checkbox" class="cbr cbr-info" checked>心理健康
+									</td>
+									<td>
 									</td>
 								</tr>
 								<tr>
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info">人事科科长
+										<input type="checkbox" class="cbr cbr-info" checked>区域答题进度统计
 									</td>
 								</tr>
 								<tr>
 									<td></td>
 									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info">信息中心主任
+										<input type="checkbox" class="cbr cbr-info" checked>学校测评进度
+									</td>
+								</tr>
+								<tr>
+									<td></td>
+									<td></td>
+									<td>
+										<input type="checkbox" class="cbr cbr-info" checked>教育局预警统计
 									</td>
 								</tr>
 								</tbody>
@@ -461,7 +366,16 @@
 						</div>
 					</div>
 				</div>
-
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label">备注</label>
+							<p>
+								<input type="text" class="form-control" name="name" value="" />
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
