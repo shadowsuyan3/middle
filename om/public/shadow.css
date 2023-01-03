@@ -1,0 +1,18 @@
+.settings-icon{
+  top: 12px !important;
+  left: 40px !important;
+}
+.settings-title{
+  font-size: 28px;
+  color: #fff;
+}
+.btn-info{
+  border-color: #26cad3 !important;
+}
+.cbr-state{
+  background: #26cad3 !important;
+  border-color: #26cad3 !important;
+}
+.label-ying{
+  padding-left: 30px;
+}
