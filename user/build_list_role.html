@@ -52,49 +52,8 @@
 				</li>
 				<li class="opened">
 					<a href="#">
-						<i class="fa-sitemap"></i>
-						<span class="title">组织架构</span>
-					</a>
-					<ul>
-						<li class="active">
-							<a href="build_list.html">
-								<span class="title">组织管理</span>
-							</a>
-						</li>
-						<li>
-							<a href="build_school.html">
-								<span class="title">学校管理</span>
-							</a>
-						</li>
-						<li>
-							<a href="build_class.html">
-								<span class="title">班级管理</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa-user"></i>
-						<span class="title">信息管理</span>
-					</a>
-					<ul>
-						<li>
-							<a href="message_student.html">
-								<span class="title">学生信息</span>
-							</a>
-						</li>
-						<li>
-							<a href="message_teacher.html">
-								<span class="title">教师信息</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa-gear"></i>
-						<span class="title">系统管理</span>
+						<i class="fa-users"></i>
+						<span class="title">用户中心</span>
 					</a>
 					<ul>
 						<li>
@@ -102,9 +61,27 @@
 								<span class="title">用户管理</span>
 							</a>
 						</li>
-						<li>
-							<a href="system_role.html">
+						<li class="active">
+							<a href="build_list_role.html">
 								<span class="title">角色管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="build_list.html">
+								<span class="title">组织管理</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-list"></i>
+						<span class="title">信息管理</span>
+					</a>
+					<ul>
+						<li>
+							<a href="build_school.html">
+								<span class="title">学校信息</span>
 							</a>
 						</li>
 					</ul>
@@ -172,52 +149,27 @@
 			<div class="col-md-12">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">角色列表【区县(市)教育局 > 内设科室 > 办公室】</h3>
+						<h3 class="panel-title">列表</h3>
 						<div class="panel-options">
-							<!-- <a href="#"><input type="button" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" value="编辑" class="btn btn-single pull-left btn-info" ></a> -->
-							<a href="build_list.html"><input type="button" value="返回" class="btn btn-single pull-left" ></a>
+							 <a href="#"><input type="button" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" value="添加" class="btn btn-single pull-left btn-info" ></a>
 						</div>
 					</div>
 					<div class="panel-body">
 						<table class="table table-small-font table-striped table-bordered">
 							<thead>
 							<tr>
-								<th style="width: auto; text-align: center">角色名称</th>
-								<th style="width: auto; text-align: center">角色权限</th>
-<!--								<th style="width: auto; text-align: center">绑定账号</th>-->
-								<th style="width: 16%; text-align: center">操作</th>
+
+								<th style="width: auto; text-align: center">角色</th>
+								<th style="width: auto; text-align: center">对应权限</th>
+								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td style="text-align: center;">区教育局长</td>
-								<td style="text-align: center">区域答题进度统计、学校测评进度、教育局预警统计	</td>
-<!--								<td style="text-align: center">李局长</td>-->
+								<td style="text-align: center;">教育局长</td>
+								<td style="text-align: center;">区域答题进度统计、学校测评进度、教育局预警统计</td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
-<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
-								</td>
-							</tr>
-							<tr>
-								<td style="text-align: center;">副局长</td>
-								<td style="text-align: center">区域答题进度统计、学校测评进度、教育局预警统计	</td>
-<!--								<td style="text-align: center">李副局长、张副局长</td>-->
-								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
-<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
-
-								</td>
-							</tr>
-							<tr>
-								<td style="text-align: center;">德育科长</td>
-								<td style="text-align: center">区域答题进度统计、学校测评进度	</td>
-<!--								<td style="text-align: center">张三、李四、王五</td>-->
-								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
-<!--									<a class="btn btn-white btn-sm" href="#" onclick="">绑定账号</a>-->
 								</td>
 							</tr>
 							</tbody>
@@ -244,7 +196,7 @@
 
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">编辑权限</h4>
+				<h4 class="modal-title">添加角色</h4>
 			</div>
 			<div class="modal-body">
 				<div class="row">
@@ -252,7 +204,7 @@
 						<div class="form-group">
 							<label class="control-label"><span class="panel-title text-danger">*</span>角色名称</label>
 							<p>
-								<input type="text" class="form-control" name="name" value="区教育局长" required />
+								<input type="text" class="form-control" name="name" value=""  required />
 							</p>
 						</div>
 					</div>
@@ -260,7 +212,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>权限配置(租户类型筛选)</label>
+							<label class="control-label"><span class="panel-title text-danger">*</span>权限配置</label>
 							<table class="table">
 								<thead>
 								<tr>
@@ -272,38 +224,24 @@
 								<tr>
 									<td>
 										<i class="fa fa-chevron-down"></i>
-										<input type="checkbox" class="cbr cbr-info" checked />心理健康应用
-									</td>
-									<td>
-								</tr>
-								<tr>
-									<td></td>
-									<td>
-										<i class="fa fa-chevron-down"></i>
 										<input type="checkbox" class="cbr cbr-info" checked>心理健康
 									</td>
 									<td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>
+										<input type="checkbox" class="cbr cbr-info" checked>答题进度统计
+									</td>
+									<td>
 									</td>
 								</tr>
 								<tr>
 									<td></td>
-									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>区域答题进度统计
+										<input type="checkbox" class="cbr cbr-info" >班级测评进度
 									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
 									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>学校测评进度
-									</td>
-								</tr>
-								<tr>
-									<td></td>
-									<td></td>
-									<td>
-										<input type="checkbox" class="cbr cbr-info" checked>教育局预警统计
 									</td>
 								</tr>
 								</tbody>

@@ -50,46 +50,10 @@
 						<span class="title">首页</span>
 					</a>
 				</li>
-				<li>
-					<a href="#">
-						<i class="fa-sitemap"></i>
-						<span class="title">组织架构</span>
-					</a>
-					<ul>
-						<li>
-							<a href="build_list.html">
-								<span class="title">组织管理</span>
-							</a>
-						</li>
-						<li>
-							<a href="build_class.html">
-								<span class="title">班级管理</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa-user"></i>
-						<span class="title">信息管理</span>
-					</a>
-					<ul>
-						<li>
-							<a href="message_student.html">
-								<span class="title">学生信息</span>
-							</a>
-						</li>
-						<li>
-							<a href="message_teacher.html">
-								<span class="title">教师信息</span>
-							</a>
-						</li>
-					</ul>
-				</li>
 				<li class="opened">
 					<a href="#">
-						<i class="fa-gear"></i>
-						<span class="title">系统管理</span>
+						<i class="fa-users"></i>
+						<span class="title">用户中心</span>
 					</a>
 					<ul>
 						<li class="active">
@@ -98,8 +62,26 @@
 							</a>
 						</li>
 						<li>
-							<a href="system_role.html">
+							<a href="build_list_role.html">
 								<span class="title">角色管理</span>
+							</a>
+						</li>
+						<li>
+							<a href="build_list.html">
+								<span class="title">组织管理</span>
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#">
+						<i class="fa-list"></i>
+						<span class="title">信息管理</span>
+					</a>
+					<ul>
+						<li>
+							<a href="build_school.html">
+								<span class="title">学校信息</span>
 							</a>
 						</li>
 					</ul>
@@ -123,7 +105,7 @@
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						<img src="assets/images/user-4.png" alt="user-image" class="img-circle img-inline userpic-32" width="28" />
 						<span>
-								小全
+								闵行区教育局
 								<i class="fa-angle-down"></i>
 						</span>
 					</a>
@@ -169,7 +151,7 @@
 					<div class="panel-heading">
 						<h3 class="panel-title">列表</h3>
 						<div class="panel-options">
-							<input type="button" value="添加" class="btn btn-info btn-single pull-left" >
+							<input type="button" value="添加" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single pull-left" >
 						</div>
 					</div>
 					<div class="panel-body">
@@ -177,9 +159,9 @@
 							<thead>
 							<tr>
 								<th style="width: auto; text-align: center">用户名</th>
-								<th style="width: auto; text-align: center">手机号（账号）</th>
+								<th style="width: auto; text-align: center">手机号</th>
 								<th style="width: auto; text-align: center">角色</th>
-								<th style="width: auto; text-align: center">所属机构</th>
+								<th style="width: auto; text-align: center">组织</th>
 								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
@@ -187,20 +169,10 @@
 							<tr>
 								<td style="text-align: center;">李小全</td>
 								<td style="text-align: center">17621844222</td>
-								<td style="text-align: center">班主任，导师</td>
-								<td style="text-align: center">沪沪实验中学</td>
+								<td style="text-align: center">教育局长</td>
+								<td style="text-align: center">心理健康中心</td>
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="">编辑</a>
-									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
-								</td>
-							</tr>
-							<tr>
-								<td style="text-align: center;">张三</td>
-								<td style="text-align: center">18321843722</td>
-								<td style="text-align: center">年级主任</td>
-								<td style="text-align: center">陆家嘴校区</td>
-								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
 							</tr>
@@ -217,6 +189,72 @@
 							<li><a href="#"><i class="fa-angle-right"></i></a></li>
 						</ul>
 					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="modal-1">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">添加用户</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label"><span class="panel-title text-danger">*</span>用户名称</label>
+							<p>
+								<input type="text" class="form-control" name="name" value=""  required />
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label"><span class="panel-title text-danger">*</span>手机号</label>
+							<p>
+								<input type="text" class="form-control" name="name" value=""  required />
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label">选择角色</label>
+							<p>
+								<select class="form-control">
+									<option value="">-</option>
+									<option value="">教育局长</option>
+									<option value="">教育副局长</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label">选择组织</label>
+							<p>
+								<select class="form-control">
+									<option value="">-</option>
+									<option value="">教师发展中心</option>
+									<option value="">心理健康中心</option>
+									<option value="">家庭教育中心</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+					<button type="button" class="btn btn-info">提交</button>
 				</div>
 			</div>
 		</div>
