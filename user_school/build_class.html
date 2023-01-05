@@ -173,7 +173,7 @@
 								<th style="width: 50%; text-align: center">(校区 >) 学段年级 > 班级</th>
 								<th style="width: auto; text-align: center">学生</th>
 								<th style="width: auto; text-align: center">班主任</th>
-								<th style="width: 12%; text-align: center">操作</th>
+								<th style="width: 18%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
@@ -195,7 +195,7 @@
 									初中一年级
 								</td>
 								<td style="text-align: center;"><a href="#" style="color: #00b4f5">164</a></td>
-								<td style="text-align: center">李小全/17621844422</td>
+								<td style="text-align: center"></td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
@@ -208,6 +208,7 @@
 								<td style="text-align: center;"><a href="#" style="color: #00b4f5">56</a></td>
 								<td style="text-align: center">李小全/17621844422</td>
 								<td style="text-align: center">
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-2').modal('show', {backdrop: 'static'});">设置班主任</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
@@ -219,6 +220,7 @@
 								<td style="text-align: center;"><a href="#" style="color: #00b4f5">57</a></td>
 								<td style="text-align: center">李小全/17621844422</td>
 								<td style="text-align: center">
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-2').modal('show', {backdrop: 'static'});">设置班主任</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
 									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
@@ -270,6 +272,49 @@
 							<label class="control-label"><span class="panel-title text-danger">*</span>班级名称</label>
 							<p>
 								<input type="text" class="form-control" name="name" value=""  required />
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-white" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-info">提交</button>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="modal-2">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title">设置班主任</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label"><span class="panel-title text-danger">*</span>选择教师</label>
+							<p>
+								<select class="form-control">
+									<option value="">教师A</option>
+									<option value="">教师B</option>
+								</select>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label class="control-label"><span class="panel-title text-danger">*</span>选择身份</label>
+							<p>
+								<select class="form-control">
+									<option value="">班主任</option>
+									<option value="">任课老师</option>
+								</select>
 							</p>
 						</div>
 					</div>

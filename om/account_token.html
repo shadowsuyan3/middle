@@ -44,7 +44,7 @@
 			</header>
 			<!--菜单栏-->
 			<ul id="main-menu" class="main-menu">
-				<li class="opened">
+				<li>
 					<a href="#">
 						<i class="fa-users"></i>
 						<span class="title">租户管理</span>
@@ -55,42 +55,19 @@
 								<span class="title">租户列表</span>
 							</a>
 						</li>
-						<li class="active">
+						<li>
 							<a href="tenant_apply.html">
 								<span class="title">开通应用</span>
 							</a>
 						</li>
 						<li>
-							<a href="tenant_build.html">
-								<span class="title">组织架构</span>
-							</a>
-						</li>
-						<li>
 							<a href="tenant_apply_role.html">
-								<span class="title">权限配置</span>
+								<span class="title">预设角色</span>
 							</a>
 						</li>
 					</ul>
 				</li>
-				<li>
-					<a href="#">
-						<i class="fa-user"></i>
-						<span class="title">账号管理</span>
-					</a>
-					<ul>
-						<li>
-							<a href="account_user.html">
-								<span class="title">用户管理</span>
-							</a>
-						</li>
-						<li>
-							<a href="account_role.html">
-								<span class="title">角色管理</span>
-							</a>
-						</li>
-					</ul>
-				</li>
-				<li>
+				<li class="opened">
 					<a href="#">
 						<i class="fa-gear"></i>
 						<span class="title">系统管理</span>
@@ -104,6 +81,21 @@
 						<li>
 							<a href="system_apply.html">
 								<span class="title">应用配置</span>
+							</a>
+						</li>
+						<li>
+							<a href="account_user.html">
+								<span class="title">运营用户</span>
+							</a>
+						</li>
+						<li>
+							<a href="account_role.html">
+								<span class="title">运营角色</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="account_token.html">
+								<span class="title">用户身份</span>
 							</a>
 						</li>
 					</ul>
@@ -152,38 +144,66 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="panel panel-default">
+					<div class="panel-body form-horizontal">
+						<div class="form-group">
+							<div class="col-md-1 control-label">名称</div>
+							<div class="col-md-3">
+								<input type="text" value="" class="form-control" placeholder="请输入名称" />
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-12">
+								<input type="button" value="查询" style=" margin-left: 10px;" class="btn btn-info btn-single pull-right" >
+								<input type="button" value="重置" class="btn btn-info btn-single pull-right" >
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<div class="panel panel-default">
 					<div class="panel-heading">
-						<h3 class="panel-title">已签约应用【松江第二中学】</h3>
+						<h3 class="panel-title">用户身份</h3>
 						<div class="panel-options">
-							<a href="tenant_apply.html"><input type="button" value="返回" class="btn btn-single pull-left" ></a>
-							<input type="button" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" value="开通应用" class="btn btn-info btn-single pull-left" >
+							<input type="button" value="添加" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single pull-left" >
 						</div>
 					</div>
 					<div class="panel-body">
 						<table class="table table-small-font table-striped table-bordered">
 							<thead>
 							<tr>
-								<th style="width: auto; text-align: center">应用名称</th>
-								<th style="width: auto; text-align: center">签约时间</th>
-								<th style="width: auto; text-align: center">状态</th>
+								<th style="width: auto; text-align: center">身份名称</th>
+								<th style="width: auto; text-align: center">编码</th>
+								<th style="width: auto; text-align: center">备注</th>
 								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
-								<td style="text-align: center;">学校基础应用</td>
-								<td style="text-align: center">2022-12-19~2023-12-19</td>
-								<td style="text-align: center; ">正常使用</td>
+								<td style="text-align: center;">班主任</td>
+								<td style="text-align: center">-</td>
+								<td style="text-align: center">-</td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
 							</tr>
 							<tr>
-								<td style="text-align: center;">心理健康-学校</td>
-								<td style="text-align: center">2021-10-12~2022-10-12</td>
-								<td style="text-align: center; color: #f00">已过期</td>
+								<td style="text-align: center;">任课老师</td>
+								<td style="text-align: center">-</td>
+								<td style="text-align: center">-</td>
 								<td style="text-align: center">
 									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">心理老师</td>
+								<td style="text-align: center">-</td>
+								<td style="text-align: center">-</td>
+								<td style="text-align: center">
+									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
 							</tr>
 							</tbody>
@@ -210,16 +230,15 @@
 
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-				<h4 class="modal-title">开通应用</h4>
+				<h4 class="modal-title">添加身份</h4>
 			</div>
-
 			<div class="modal-body">
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>签约开始时间</label>
+							<label class="control-label"><span class="panel-title text-danger">*</span>身份名称</label>
 							<p>
-								<input type="text" class="form-control datepicker" autocomplete="off" name="name" data-format="yyyy/mm/dd" required />
+								<input type="text" class="form-control" name="name" value=""  required />
 							</p>
 						</div>
 					</div>
@@ -227,59 +246,9 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>签约结束时间</label>
+							<label class="control-label"><span class="panel-title text-danger">*</span>备注</label>
 							<p>
-								<input type="text" class="form-control datepicker" autocomplete="off" name="name" data-format="yyyy/mm/dd" required />
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>开通应用</label>
-							<p>
-							<div class="form-block">
-								<label>
-									<input type="checkbox" class="cbr cbr-info">
-									教育局基础应用
-								</label>
-								<label class="label-ying">
-									<input type="checkbox" class="cbr cbr-info">
-									学校基础应用
-								</label>
-								<label class="label-ying">
-									<input type="checkbox" class="cbr cbr-info">
-									心理健康-教育局
-								</label>
-							</div>
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group">
-							<label class="control-label"><span class="panel-title text-danger">*</span>开通学校</label>
-							<p>
-							<div class="form-block">
-								<label>
-									<input type="checkbox" class="cbr cbr-info" checked>
-									全选
-								</label>
-								<label>
-									<input type="checkbox" class="cbr cbr-info" checked>
-									闵行区第一中学
-								</label>
-								<label class="label-ying">
-									<input type="checkbox" class="cbr cbr-info" checked>
-									闵行区第二中学
-								</label>
-								<label class="label-ying">
-									<input type="checkbox" class="cbr cbr-info" checked>
-									闵行区第三中学
-								</label>
-							</div>
+								<input type="text" class="form-control" name="name" value=""  required />
 							</p>
 						</div>
 					</div>
@@ -292,7 +261,6 @@
 		</div>
 	</div>
 </div>
-
 <!-- Bottom Scripts -->
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/TweenMax.min.js"></script>
@@ -301,17 +269,5 @@
 <script src="assets/js/xenon-api.js"></script>
 <script src="assets/js/xenon-toggles.js"></script>
 <script src="assets/js/xenon-custom.js"></script>
-<!-- Imported scripts on this page -->
-<script src="assets/js/daterangepicker/daterangepicker.js"></script>
-<script src="assets/js/datepicker/bootstrap-datepicker.js"></script>
-<script src="assets/js/timepicker/bootstrap-timepicker.min.js"></script>
-<script src="assets/js/colorpicker/bootstrap-colorpicker.min.js"></script>
-<script src="assets/js/select2/select2.min.js"></script>
-<script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
-<script src="assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
-<script src="assets/js/tagsinput/bootstrap-tagsinput.min.js"></script>
-<script src="assets/js/typeahead.bundle.js"></script>
-<script src="assets/js/handlebars.min.js"></script>
-<script src="assets/js/multiselect/js/jquery.multi-select.js"></script>
 </body>
 </html>

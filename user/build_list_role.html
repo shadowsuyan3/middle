@@ -160,16 +160,31 @@
 							<tr>
 
 								<th style="width: auto; text-align: center">角色</th>
+								<th style="width: auto; text-align: center">类型</th>
 								<th style="width: auto; text-align: center">对应权限</th>
+								<th style="width: 45%; text-align: center">备注</th>
 								<th style="width: 12%; text-align: center">操作</th>
 							</tr>
 							</thead>
 							<tbody>
 							<tr>
 								<td style="text-align: center;">教育局长</td>
+								<td style="text-align: center;">默认角色</td>
 								<td style="text-align: center;">区域答题进度统计、学校测评进度、教育局预警统计</td>
+								<td style="text-align: left;">该角色为系统预设的角色，已分配了查看区域数据的权限，可在用户管理>添加用户时<br />选择这个角色,添加成功后该用户拥有教育局长的权限。</td>
 								<td style="text-align: center">
-									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+<!--									<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>-->
+<!--									<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>-->
+								</td>
+							</tr>
+							<tr>
+								<td style="text-align: center;">教育副局长</td>
+								<td style="text-align: center;">自建角色</td>
+								<td style="text-align: center;">区域答题进度统计、学校测评进度、教育局预警统计</td>
+								<td style="text-align: left;">该角色为系统预设的角色，已分配了查看区域数据的权限，可在用户管理>添加用户时<br />选择这个角色,添加成功后该用户拥有教育局长的权限。</td>
+								<td style="text-align: center">
+																		<a class="btn btn-white btn-sm" href="#" onclick="jQuery('#modal-1').modal('show', {backdrop: 'static'});">编辑</a>
+																		<a class="btn btn-white btn-sm" href="#" onclick="confirm('确定要删除吗？')">删除</a>
 								</td>
 							</tr>
 							</tbody>
